@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>js_01_remark</title>
+    <title>js_03_ArithmeticOperators</title>
 </head>
 <body>
     <script type="text/javascript">
         
-        /*-------------------------- Addition (+) */
+        /*  ArithmeticOperator  */
+        document.write("<h3>Arithmetic Operators</h3><hr>");
+        
+        
+        /* Addition (+) ------------------------- */
         document.write("<h3>Addition (+)</h3>");
 
         // Number + Number -> addition
@@ -38,7 +42,8 @@
         document.write( false + false ); // 0
         document.write( "<br>" );
         
-        /*-------------------------- Subtraction (-) */
+        
+        /* Subtraction (-) ------------------------- */
         document.write("<h3>Subtraction (-)</h3>");
         
         // Number - Number -> sub
@@ -61,7 +66,8 @@
         document.write( false - false ); // 0
         document.write( "<br>" );
         
-        /*-------------------------- Division (/) */
+        
+        /* Division (/) ------------------------- */
         document.write("<h3>Division (/)</h3>");
         
         // Number / Number -> division
@@ -84,7 +90,8 @@
         document.write( false / false ); // NaN
         document.write( "<br>" );
         
-        /*-------------------------- Multiplication (*) */
+        
+        /* Multiplication (*) ------------------------- */
         document.write("<h3>Multiplication (*)</h3>");
         
         // Number * Number -> multiplication
@@ -107,7 +114,8 @@
         document.write( false * false ); // 0
         document.write( "<br>" );
         
-        /*-------------------------- Remainder (%) */
+        
+        /* Remainder (%) */
         document.write("<h3>Remainder (%)</h3>");
 
         // Number % Number -> addition
@@ -128,96 +136,6 @@
         // true = 1, false = 0
         document.write( true % true );   // 0
         document.write( false % false ); // NaN
-        document.write( "<br>" );
-        
-        /*-------------------------- Exponentiation (**) */
-        document.write("<h3>Exponentiation (**)</h3>");
-
-        // Number ** Number -> Exponentiation
-        document.write( 2 ** 3 ); // 8
-        document.write( "<br>" );
-        
-        // Number + Boolean -> Exponentiation
-        // true = 1, false = 0
-        document.write( 2 ** true );  // 2
-        document.write( 2 ** false ); // 1
-        document.write( "<br>" );
-        
-        // Number + String -> NaN
-        // String + String -> NaN
-        
-        // String + Boolean -> Exponentiation
-        document.write( "foo" ** true ); // NaN
-        document.write( "foo" ** false ); // 1
-        document.write( "<br>" );
-        
-        // Boolean + Boolean -> Exponentiation
-        // true = 1, false = 0
-        document.write( true ** true );   // 1
-        document.write( false ** false ); // 1
-        document.write( "<br>" );
-        
-        /*-------------------------- Increment (++, --) */
-        document.write("<h3>Increment (++,--)</h3>");
-        // a++ or a-- : postfix operation
-        // ++a or --a : prefix operation
-        
-        // Number (++) -> increment
-        var num = 1;
-        document.write( num++ ); // 1
-        document.write( num );   // 2
-        document.write( "<br>" );
-        document.write( ++num ); // 3
-        document.write( num );   // 3
-        document.write( "<br>" );
-        
-        // Number (--) -> increment
-        var num = 1;
-        document.write( num-- ); // 1
-        document.write( num );   // 0
-        document.write( "<br>" );
-        document.write( --num ); // -1
-        document.write( num );   // -1
-        document.write( "<br>" );
-        
-        // Boolean -> error
-        // String  -> error
-        
-        /*-------------------------- Unary negation ((+),(-)) */
-        document.write("<h3>Unary negation ((+),(-))</h3>");
-        
-        // +Number -> Unary negation
-        var num = 1;
-        document.write( +num ); // 1
-        document.write( "<br>" );
-        
-        // -Number -> Unary negation
-        var num = 1;
-        document.write( -num ); // -1
-        document.write( "<br>" );
-        
-        // +String(String) -> NaN
-        var str = "foo";
-        document.write( +str ); // NaN
-        document.write( "<br>" );
-        
-        // +String(Number) -> Automatic type conversion
-        var str = "1";
-        document.write( +str ); // 1
-        document.write( "<br>" );
-        
-        // +Boolean -> Unary negation
-        var bool1 = true;
-        var bool2 = false;
-        document.write( +bool1 ); // 1
-        document.write( +bool2 ); // 0
-        document.write( "<br>" );
-        
-        // -Boolean -> Unary negation
-        var bool1 = true;
-        var bool2 = false;
-        document.write( -bool1 ); // -1
-        document.write( -bool2 ); // 0
         document.write( "<br>" );
         
     </script>
