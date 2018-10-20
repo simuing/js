@@ -1,3 +1,6 @@
-# javascript study
-자바스크립트 공부를 하며 이렇게 공부하면 좋을 것 같다는 느낌으로 
-복습겸 정리해보는 중입니다.
+# INDEX
+<ul>
+  <ol>01. remark</ol>
+  <ol>02. type</ol>
+  <ol>03. operator</ol>
+</ul>
