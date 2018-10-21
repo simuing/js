@@ -5,13 +5,72 @@
 </head>
 <body>
     <script type="text/javascript">
-    /*
-        Logical Operators
-
-        AND : &&
-        OR  : ||
-        NOT : !
-    */
+        /* Logical Operators */
+        // AND : &&
+        // OR  : ||
+        // NOT : !
+        
+        // AND : &&
+        if ( true && true) //true
+            document.write("true && true -> true");
+        else
+            document.write("true && true -> false");
+            document.write("<br>");
+        
+        if ( true && false) //false
+            document.write("true && false -> true");
+        else
+            document.write("true && false -> false");
+            document.write("<br>");
+        
+        if ( false && false) //false
+            document.write("false && false -> true");
+        else
+            document.write("false && false -> false");
+            document.write("<br>");
+        
+        // OR : ||
+        if ( true || true) //true
+            document.write("true || true -> true");
+        else
+            document.write("true || true -> false");
+            document.write("<br>");
+        
+        if ( true || false) //true
+            document.write("true || false -> true");
+        else
+            document.write("true || false -> false");
+            document.write("<br>");
+        
+        if ( false || false) //false
+            document.write("false || false -> true");
+        else
+            document.write("false || false -> false");
+            document.write("<br>");
+        
+        // NOT : !
+        if ( !true ) //false
+            document.write("!true -> true");
+        else
+            document.write("!true -> false");
+            document.write("<br>");
+        if ( !false ) //true
+            document.write("!false -> true");
+        else
+            document.write("!false -> false");
+            document.write("<br>");
+        
+        /*
+            true && true -> true
+            true && false -> false
+            false && false -> false
+            true || true -> true
+            true || false -> true
+            false || false -> false
+            !true -> false
+            !false -> true
+        */
+        
     </script>
 </body>
 </html>

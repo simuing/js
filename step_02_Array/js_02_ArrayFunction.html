@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js_01_ArrayFunction</title>
+</head>
+<body>
+    <script type="text/javascript">
+    
+        /* Array Function */
+
+        // .length : length check
+        // .push(e,..) : append element
+        // .pop() : get and delete last element
+        var array1 = new Array();
+        array1.push("four");
+        array1.push("five", "six");
+        document.write(array1 + "<br>"); //four,five,six
+        document.write(array1.length + "<br>"); //3
+        document.write(array1.pop() + "<br>");  //six
+        document.write(array1.pop() + "<br>");  //five
+        document.write(array1.pop() + "<br>");  //four
+        document.write(array1.pop() + "<br>");  //undefined
+        document.write(array1.length + "<br>"); //0
+        
+        // .unshift(e,..) : prepend element
+        // .shift()   : get and delete first element
+        var array2 = new Array();
+        array2.unshift("one");
+        array2.unshift("two","three");
+        document.write(array2 + "<br>"); //two,three,one
+        array2.shift();
+        document.write(array2 + "<br>"); //three,one
+        array2.shift();
+        document.write(array2 + "<br>"); //one
+        
+        // Array.concat(Array) : concatenation
+        var ot = ["one", "two"];
+        var tf = ["three", "four"];
+        document.write(ot.concat(tf) + "<br>"); //one,two,three,four
+        
+        // .indexOf(e) : return the index
+        // .indexOf(e, fromIndex) : starting the fromIndex
+        var array3 = ["red", "yellow", "blue"];
+        document.write(array3.indexOf("red") + "<br>");     // 0
+        document.write(array3.indexOf("yellow") + "<br>");  // 1
+        document.write(array3.indexOf("blue") + "<br>");    // 2
+        document.write(array3.indexOf("red",2) + "<br>");   //-1
+        document.write(array3.indexOf("yellow",2) + "<br>");//-1
+        document.write(array3.indexOf("blue",2) + "<br>");  // 2
+        
+        // .join() : joins all elements of array into a string
+        // .join(separator) : join with a separator
+        document.write(array3.join() + "<br>"); //red,yellow,blue
+        document.write(array3.join("-") + "<br>"); //red-yellow-blue
+        
+    </script>
+</body>
+</html>
