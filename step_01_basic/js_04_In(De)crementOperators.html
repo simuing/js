@@ -5,32 +5,34 @@
 </head>
 <body>
     <script type="text/javascript">
+    /*
+        In/Decrement Operators
         
-        /* Increment(++, --) */
-        // a++ or a-- : postfix operation
-        // ++a or --a : prefix operation
-        document.write("<h3>In/Decrement (++,--)</h3>");
+        a++ or a-- : postfix operation
+        ++a or --a : prefix operation
+    */
         
-        // Number(++) -> increment
+        // (++) -> increment
         var num = 1;
-        document.write( num++ ); // 1
-        document.write( num );   // 2
-        document.write( "<br>" );
-        document.write( ++num ); // 3
-        document.write( num );   // 3
-        document.write( "<br>" );
+        console.log("Number(++)");
+        console.log( num++ ); // 1
+        console.log( num );   // 2
         
-        // Number(--) -> decrement
+        console.log("(++)Number");
+        console.log( ++num ); // 3
+        console.log( num );   // 3
+        
+        // (--) -> decrement
         var num = 1;
-        document.write( num-- ); // 1
-        document.write( num );   // 0
-        document.write( "<br>" );
-        document.write( --num ); // -1
-        document.write( num );   // -1
-        document.write( "<br>" );
+        console.log("Number(--)");
+        console.log( num-- ); // 1
+        console.log( num );   // 0
         
-        // Boolean(++) -> error
-        // String  -> error
+        console.log("(--)Number");
+        console.log( --num ); // -1
+        console.log( num );   // -1
+        
+        // Boolean, String  -> error
         
     </script>
 </body>

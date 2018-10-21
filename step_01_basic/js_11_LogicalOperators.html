@@ -7,10 +7,65 @@
     <script type="text/javascript">
     /*
         Logical Operators
-
+        
         AND : &&
         OR  : ||
         NOT : !
+    */
+
+        // AND : &&
+        if ( true && true) //true
+            console.log("true && true -> true");
+        else
+            console.log("true && true -> false");
+        
+        if ( true && false) //false
+            console.log("true && false -> true");
+        else
+            console.log("true && false -> false");
+        
+        if ( false && false) //false
+            console.log("false && false -> true");
+        else
+            console.log("false && false -> false");
+        
+        // OR : ||
+        if ( true || true) //true
+            console.log("true || true -> true");
+        else
+            console.log("true || true -> false");
+        
+        if ( true || false) //true
+            console.log("true || false -> true");
+        else
+            console.log("true || false -> false");
+        
+        if ( false || false) //false
+            console.log("false || false -> true");
+        else
+            console.log("false || false -> false");
+        
+        // NOT : !
+        if ( !true ) //false
+            console.log("!true -> true");
+        else
+            console.log("!true -> false");
+        if ( !false ) //true
+            console.log("!false -> true");
+        else
+            console.log("!false -> false");
+         
+    /*  
+        Result
+        
+        true && true -> true
+        true && false -> false
+        false && false -> false
+        true || true -> true
+        true || false -> true
+        false || false -> false
+        !true -> false
+        !false -> true
     */
     </script>
 </body>

@@ -5,129 +5,96 @@
 </head>
 <body>
     <script type="text/javascript">
-        
-        /* Primitive Type */
-        /* String         */
+    /*
+        Primitive Type
+        String, Number, Boolean, undefined, Null
+    */
+        // String 
         var str1 = "string";
         var str2 = 'string';
         var str3 = "'string'";
         var str4 = '"string"';
-
-        document.write(
-            "<h3>String</h3>" + 
-            "str1 : " + str1 + "<br>" + // string
-            "str2 : " + str2 + "<br>" + // string
-            "str3 : " + str3 + "<br>" + // 'string'
-            "str4 : " + str4 + "<hr>"   // "string"
-        );
+        console.log("String");
+        console.log(str1); //string
+        console.log(str2); //string
+        console.log(str3); //'string'
+        console.log(str4); //"string"
         
-        /* Primitive Type */
-        /* Number         */
+        // Number
         var num1 = 1;
         var num2 = 1.0;
         var num3 = 1.1;
+        console.log("Number");
+        console.log(num1); //1
+        console.log(num2); //1
+        console.log(num3); //1.1
         
-        document.write(
-            "<h3>Number</h3>" + 
-            "num1 : " + num1 + "<br>" + // 1
-            "num2 : " + num2 + "<br>" + // 1
-            "num3 : " + num3 + "<hr>"   // 1.1
-        );
-        
-        /* Primitive Type */
-        /* Boolean        */
+        // Boolean
         var bool1 = true;
         var bool2 = false;
-        
-        document.write(
-            "<h3>Boolean</h3>" + 
-            "bool1 : " + bool1 + "<br>" + // true
-            "bool2 : " + bool2 + "<hr>"   // false
-        );
-        
-        /* Primitive Type */
-        /* undefined      */
+        console.log("Boolean");
+        console.log(bool1); //true
+        console.log(bool2); //false
+
+        // undefined
         var undef;
+        console.log("undefined");
+        console.log(undef); //undefined
         
-        document.write(
-            "<h3>undefined</h3>" + 
-            "undef : " + undef + "<hr>"   // undefined
-        );
-        
-        /* Primitive Type */
-        /* Null           */
+        // Null
         var nul = null;
+        console.log("Null");
+        console.log(nul); //null
         
-        document.write(
-            "<h3>Null</h3>" + 
-            "nul : " + nul + "<hr>"   // null
-        );
-        
-        /* Object Type */
-        /* Object      */
-        var obj = new Object();
-            obj.name = "jin";
-            obj.age = 15;
-        
-        document.write(
-            "<h3>Object</h3>" + 
-            "obj : "      + obj      + "<br>" + // [object Object]
-            "obj.name : " + obj.name + "<br>" + // jin
-            "obj.age : "  + obj.age  + "<hr>"   // 15
-        );
-        
-        /* Object Type */
-        /* Array       */
+    /*
+        Object Type
+        Array, Object, function
+    */
+        // Array
         var array = new Array();
-            array.push("one");
-            array.push("two");
-            array.push("Three");
+        array.push("one");
+        array.push("two");
+        array.push("Three");
+        console.log("Array");
+        console.log(array);    //["one", "two", "Three"]
+        console.log(array[0]); //one
+        console.log(array[1]); //two
+        console.log(array[2]); //Three
         
-        document.write(
-            "<h3>Array</h3>" + 
-            "array : "    + array    + "<br>" + // one,two,Three
-            "array[0] : " + array[0] + "<br>" + // one
-            "array[1] : " + array[1] + "<br>" + // two
-            "array[2] : " + array[2] + "<hr>"   // Three
-        );
+        // Object
+        var obj = new Object();
+        obj.name = "jin";
+        obj.age = 15;
+        console.log("Object");
+        console.log(obj);      //{name: "jin", age: 15}
+        console.log(obj.name); //jin
+        console.log(obj.age);  //15
         
-        /* Object Type  */
-        /* Object Array */
+        // Object Array
         var array = new Array();
         var obj1 = new Object();
-            obj1.name = "jin";
-            obj1.age = 15;
-        array.push(obj1);
         var obj2 = new Object();
-            obj2.name = "song";
-            obj2.age = 23;
-            array.push(obj2);
+        obj1.name = "jin";
+        obj1.age = 15;
+        obj2.name = "song";
+        obj2.age = 23;
+        array.push(obj1);
+        array.push(obj2);
+        console.log("Object Array");
+        console.log(array);         //(2) [{…}, {…}]
+        console.log(array[0]);      //{name: "jin", age: 15}
+        console.log(array[0].name); //jin
+        console.log(array[0].age);  //15
+        console.log(array[1]);      //{name: "song", age: 23}
+        console.log(array[1].name); //song
+        console.log(array[1].age);  //23
         
-        document.write(
-            "<h3>Object Array</h3>" + 
-            "array : "         + array         + "<br>" + // [object Object],[object Object]
-            "array[0] : "      + array[0]      + "<br>" + // [object Object]
-            "array[0].name : " + array[0].name + "<br>" + // jin
-            "array[0].age : "  + array[0].age  + "<br>" + // 15
-            "array[1] : "      + array[1]      + "<br>" + // [object Object]
-            "array[1].name : " + array[1].name + "<br>" + // song
-            "array[1].age : "  + array[1].age  + "<hr>"   // 23
-        );
-        
-        /* Object Type  */
-        /* function     */
-        var func1 = function (e) {
-            document.write("func1("+e+")<br>");
-            return;
-        };
-        function func2 (e) {
-            document.write("func2("+e+")<br>");
-            return;
-        }
-        document.write("<h3>function</h3>");
-        func1("hi");  // func1(hi)
-        func2("bye"); // func2(bye)
-        document.write("<hr>");
+        // function
+        var func1 = function(e) { console.log(e); };
+        function func2(e) { console.log(e); }
+        console.log("function");
+        func1("hi");  //hi
+        func2("bye"); //bye
         
     </script>
 </body>

@@ -5,138 +5,100 @@
 </head>
 <body>
     <script type="text/javascript">
+    /*
+        Arithmetic Operator
         
-        /*  ArithmeticOperator  */
-        document.write("<h3>Arithmetic Operators</h3><hr>");
+        Addition (+)
+        Subtraction (-)
+        Division (/)
+        Multiplication (*)
+        Remainder (%)
+    */
         
-        
-        /* Addition (+) ------------------------- */
-        document.write("<h3>Addition (+)</h3>");
-
+        // Addition (+)
         // Number + Number -> addition
-        document.write( 1 + 2 ); // 3
-        document.write( "<br>" );
-        
+        console.log("Addition (+)");
+        console.log( 1 + 2 ); // 3
         // Number + Boolean -> addition
-        // true = 1, false = 0
-        document.write( 1 + true );  // 2
-        document.write( 1 + false ); // 1
-        document.write( "<br>" );
-        
+        // true -> 1, false -> 0
+        console.log( 1 + true );  // 2
+        console.log( 1 + false ); // 1
         // Number + String -> concatenation
-        document.write( 1 + "foo" ); // 1foo
-        document.write( "<br>" );
-        
+        console.log( 1 + "foo" ); // 1foo
         // String + String -> concatenation
-        document.write( "foo" + "foo" ); // foofoo
-        document.write( "<br>" );
-        
+        console.log( "foo" + "foo" ); // foofoo
         // String + Boolean -> concatenation
-        document.write( "foo" + true ); // footrue
-        document.write( "foo" + false ); // foofalse
-        document.write( "<br>" );
-        
+        // true -> "true", false -> "false"
+        console.log( "foo" + true ); // footrue
+        console.log( "foo" + false ); // foofalse
         // Boolean + Boolean -> addition
         // true = 1, false = 0
-        document.write( true + true );   // 2
-        document.write( false + false ); // 0
-        document.write( "<br>" );
+        console.log( true + true );   // 2
+        console.log( false + false ); // 0
         
-        
-        /* Subtraction (-) ------------------------- */
-        document.write("<h3>Subtraction (-)</h3>");
-        
-        // Number - Number -> sub
-        document.write( 1 - 2 );   // -1
-        document.write( "<br>" );
-        
-        // Number - Boolean -> sub
+        // Subtraction (-)
+        // Number - Number -> Subtraction
+        console.log("Subtraction (-)");
+        console.log( 1 - 2 );   // -1
+        // Number - Boolean -> Subtraction
         // true = 1, false = 0
-        document.write( 1 - true );  // 0
-        document.write( 1 - false ); // 1
-        document.write( "<br>" );
-        
+        console.log( 1 - true );  // 0
+        console.log( 1 - false ); // 1
+        // Boolean - Boolean -> Subtraction
+        // true = 1, false = 0
+        console.log( true - true );   // 0
+        console.log( false - false ); // 0
         // Number - String  -> NaN
         // String - String  -> NaN
         // String - Boolean -> NaN
         
-        // Boolean - Boolean -> sub
-        // true = 1, false = 0
-        document.write( true - true );   // 0
-        document.write( false - false ); // 0
-        document.write( "<br>" );
-        
-        
-        /* Division (/) ------------------------- */
-        document.write("<h3>Division (/)</h3>");
-        
+        // Division (/)
         // Number / Number -> division
-        document.write( 1 / 2 );   // -1
-        document.write( "<br>" );
-        
+        console.log("Division (/)");
+        console.log( 1 / 2 );   // -1
         // Number / Boolean -> division
         // true = 1, false = 0
-        document.write( 1 / true );  // 1
-        document.write( 1 / false ); // infinity
-        document.write( "<br>" );
-        
+        console.log( 1 / true );  // 1
+        console.log( 1 / false ); // infinity
+        // Boolean / Boolean -> division
+        // true = 1, false = 0
+        console.log( true / true );   // 1
+        console.log( false / false ); // NaN
         // Number / String  -> NaN
         // String / String  -> NaN
         // String / Boolean -> NaN
-
-        // Boolean / Boolean -> division
-        // true = 1, false = 0
-        document.write( true / true );   // 1
-        document.write( false / false ); // NaN
-        document.write( "<br>" );
         
-        
-        /* Multiplication (*) ------------------------- */
-        document.write("<h3>Multiplication (*)</h3>");
-        
+        // Multiplication (*)
         // Number * Number -> multiplication
-        document.write( 1 * 2 );   // 2
-        document.write( "<br>" );
-        
+        console.log("Multiplication (*)");
+        console.log( 1 * 2 );   // 2
         // Number * Boolean -> multiplication
         // true = 1, false = 0
-        document.write( 1 * true );  // 1
-        document.write( 1 * false ); // 0
-        document.write( "<br>" );
-        
+        console.log( 1 * true );  // 1
+        console.log( 1 * false ); // 0
+        // Boolean * Boolean -> multiplication
+        // true = 1, false = 0
+        console.log( true * true );   // 1
+        console.log( false * false ); // 0
         // Number * String  -> NaN
         // String * String  -> NaN
         // String * Boolean -> NaN
         
-        // Boolean * Boolean -> multiplication
-        // true = 1, false = 0
-        document.write( true * true );   // 1
-        document.write( false * false ); // 0
-        document.write( "<br>" );
-        
-        
-        /* Remainder (%) */
-        document.write("<h3>Remainder (%)</h3>");
-
+        // Remainder (%)
         // Number % Number -> addition
-        document.write( 1 % 2 ); // 3
-        document.write( "<br>" );
-        
+        console.log("Remainder (%)");
+        console.log( 1 % 2 ); // 3
         // Number % Boolean -> addition
         // true = 1, false = 0
-        document.write( 1 % true );  // 0
-        document.write( 1 % false ); // NaN
-        document.write( "<br>" );
-        
+        console.log( 1 % true );  // 0
+        console.log( 1 % false ); // NaN
+        // Boolean % Boolean -> addition
+        // true = 1, false = 0
+        console.log( true % true );   // 0
+        console.log( false % false ); // NaN
         // Number * String -> NaN
         // String * String -> NaN
         // String * Boolean -> NaN
-        
-        // Boolean % Boolean -> addition
-        // true = 1, false = 0
-        document.write( true % true );   // 0
-        document.write( false % false ); // NaN
-        document.write( "<br>" );
         
     </script>
 </body>

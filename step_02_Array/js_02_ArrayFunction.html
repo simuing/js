@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js_01_ArrayFunction</title>
+</head>
+<body>
+    <script type="text/javascript">
+    /*
+        Array Function
+        
+        .length : length check
+        .push(e,..) : append element
+        .pop() : get and delete last element
+        .unshift(e,..) : prepend element
+        .shift()   : get and delete first element
+        .indexOf(e) : return the index
+        .indexOf(e, fromIndex) : starting the fromIndex
+        .join() : joins all elements of array into a string
+        .join(separator) : join with a separator
+    */
+        
+        // .length
+        // .push(e,..)
+        // .pop()
+        var array1 = new Array();
+        array1.push("four");
+        array1.push("five", "six");
+        console.log(array1); //(3) ["four", "five", "six"]
+        console.log(array1.length); //3
+        console.log(array1.pop());  //six
+        console.log(array1.pop());  //five
+        console.log(array1.pop());  //four
+        console.log(array1.pop());  //undefined
+        console.log(array1.length); //0
+        
+        // .unshift(e,..)
+        // .shift()
+        var array2 = new Array();
+        array2.unshift("one");
+        array2.unshift("two","three");
+        console.log(array2); //(3) ["two", "three", "one"]
+        array2.shift();
+        console.log(array2); //(2) ["three", "one"]
+        array2.shift();
+        console.log(array2); //["one"]
+        
+        // Array.concat(Array)
+        var ot = ["one", "two"];
+        var tf = ["three", "four"];
+        console.log(ot.concat(tf)); //(4) ["one", "two", "three", "four"]
+        
+        // .indexOf(e)
+        // .indexOf(e, fromIndex)
+        var array3 = ["red", "yellow", "blue"];
+        console.log(array3.indexOf("red"));     // 0
+        console.log(array3.indexOf("yellow"));  // 1
+        console.log(array3.indexOf("blue"));    // 2
+        console.log(array3.indexOf("red",2));   //-1
+        console.log(array3.indexOf("yellow",2));//-1
+        console.log(array3.indexOf("blue",2));  // 2
+        
+        // .join() 
+        // .join(separator)
+        console.log(array3.join());   //red,yellow,blue
+        console.log(array3.join("-")); //red-yellow-blue
+    
+    </script>
+</body>
+</html>

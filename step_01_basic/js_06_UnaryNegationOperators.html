@@ -7,41 +7,35 @@
     <script type="text/javascript">
         
         /* Unary negation ((+),(-)) */
-        document.write("<h3>Unary Negation ((+),(-))</h3>");
+        console.log("Unary Negation ((+),(-))");
         
         // +Number -> Unary negation
         var num = 1;
-        document.write( +num ); // 1
-        document.write( "<br>" );
+        console.log( +num ); // 1
         
         // -Number -> Unary negation
         var num = 1;
-        document.write( -num ); // -1
-        document.write( "<br>" );
+        console.log( -num ); // -1
         
         // +String(String) -> NaN
         var str = "foo";
-        document.write( +str ); // NaN
-        document.write( "<br>" );
+        console.log( +str ); // NaN
         
         // +String(Number) -> Automatic type conversion
         var str = "1";
-        document.write( +str ); // 1
-        document.write( "<br>" );
+        console.log( +str ); // 1
         
         // +Boolean -> Unary negation
         var bool1 = true;
         var bool2 = false;
-        document.write( +bool1 ); // 1
-        document.write( +bool2 ); // 0
-        document.write( "<br>" );
+        console.log( +bool1 ); // 1
+        console.log( +bool2 ); // 0
         
         // -Boolean -> Unary negation
         var bool1 = true;
         var bool2 = false;
-        document.write( -bool1 ); // -1
-        document.write( -bool2 ); // 0
-        document.write( "<br>" );
+        console.log( -bool1 ); // -1
+        console.log( -bool2 ); // 0
         
     </script>
 </body>
