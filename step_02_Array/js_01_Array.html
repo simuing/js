@@ -8,24 +8,26 @@
     /*
         Array
         
-        1. var array = []
-        2. var array = [e,...]
-        3. new Array()
+        new Array()
+        new Array(e,...)
+        []
+        [e,...]
     */
-        var array = new Array();
-        console.log(array); //[]
+        var arr = new Array();
+        console.log(arr); //[]
         
-        var array = [];
-        array[0] = "red";
-        array[1] = "orange";
-        array[2] = "yellow";
-        array[3] = "green";
-        array[4] = "blue";
-        console.log(array);
-        //(5) ["red", "orange", "yellow", "green", "blue"]
+        var arr = new Array("hi","bye");
+        console.log(arr); //(2) ["hi", "bye"]
         
-        var array = ["one", "two", "three"];
-        console.log(array); //(3) ["one", "two", "three"]
+        var arr = [];
+        arr[0] = "red";
+        arr[1] = "orange";
+        arr[2] = "yellow";
+        arr[3] = "green";
+        console.log(arr); //(4) ["red", "orange", "yellow", "blue"]
+        
+        var arr = ["one", "two", "three"];
+        console.log(arr); //(3) ["one", "two", "three"]
     
     </script>
 </body>

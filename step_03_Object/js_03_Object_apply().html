@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js_03_Object_apply()</title>
+</head>
+<body>
+    <script type="text/javascript">
+    /*
+        Object Function
+        
+        Object.apply(thisArg, [argsArray])
+    */
+
+        // min/max number in an array
+        var num = [4, 2, 10, 6];
+        var max = Math.max.apply(null, num);
+        var min = Math.min.apply(null, num);
+        console.log(max); //10 
+        console.log(min); //2
+            
+    </script>
+</body>
+</html>
