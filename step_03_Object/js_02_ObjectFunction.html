@@ -31,12 +31,39 @@
         Object.setPrototypeOf()
         Object.values()
     */
-        var obj = {
-            key1 : "value1",
-            key2 : "value2",
-            key3 : "value3"
-        }
-        // Object
+        
+        // Object.apply()
+        
+        // Object.assign(target obj, ...sources obj)
+        var obj_1 = { a:1, b:2, c:3 };
+        var obj_2 = { c:4, d:5 };
+        var obj_3 = Object.assign(obj_1, obj_2);
+        console.log(obj_1); //{a: 1, b: 2, c: 4, d: 5}
+        console.log(obj_2); //{c: 4, d: 5}
+        console.log(obj_3); //{a: 1, b: 2, c: 4, d: 5}
+        
+        // Object.call()
+        
+        
+        // Object.bind()
+        // Object.create()
+        // Object.defineProperties()
+        // Object.defineProperty()
+        // Object.freeze()
+        // Object.getOwnPropertyDescriptor()
+        // Object.getOwnPropertyNames()
+        // Object.getOwnPropertySymbols()
+        // Object.getPrototypeOf()
+        // Object.is()
+        // Object.isExtensible()
+        // Object.isFrozen()
+        // Object.isSealed()
+        // Object.keys()
+        // Object.preventExtensions()
+        // Object.prototype()
+        // Object.seal()
+        // Object.setPrototypeOf()
+        // Object.values()
         
     </script>
 </body>
