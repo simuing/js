@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Set Comma Test Suite</title>
+    <meta charset="utf-8">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.8.0.css">
+    <script src="https://code.jquery.com/qunit/qunit-2.8.0.js"></script>
+</head>
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture">test markup</div>
+    <script type="text/javascript">
+        
+        function setComma01(num){ //substr 활용
+            var num = num+"";
+            if(num.length <= 3){
+                return num;
+            } else {
+                var len = num.length;
+                var mod = len%3;
+                mod = mod === 0?3:mod;
+                var count = (len - mod)/3;
+                var retunVal = "";
+                retunVal += num.substr(0,mod);
+                for(var i=0; count > i; i++){
+                    retunVal += "," + num.substr(mod + (3*i),3);
+                }
+                return retunVal;
+            }
+        }
+        
+        function setComma02(num){ //정규식 활용
+            var num = num+"";
+            if(num.length > 3) {
+                return num.replace(/(\d{3})$/,",$1");
+            } else {
+                return num;
+            }
+        }
+        
+    </script>
+    <script type="text/javascript">
+        QUnit.test("세 자리 이하인 경우는 매개변수를 바로 반환한다.", function (assert){
+            assert.equal(setComma01(1234), "1,234", "세 자리가 넘는 경우 쉼표를 표시한다.");
+            assert.equal(setComma01(12345), "12,345", "세 자리가 넘는 경우 쉼표를 표시한다.");
+            assert.equal(setComma01(123456), "123,456", "세 자리가 넘는 경우 쉼표를 표시한다.");
+        });
+    </script>
+</body>
+</html>
