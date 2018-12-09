@@ -1,3 +1,5 @@
-# javascript study
-자바스크립트 공부를 하며 이렇게 공부하면 좋을 것 같다는 느낌으로 
-복습겸 정리해보는 중입니다.
+# js
+참고사이트
+https://developer.mozilla.org
+
+free use it

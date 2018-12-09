@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js_05_ExponentiationOperators</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        /* Exponentiation (**) */
+        console.log("Exponentiation (**)");
+
+        // Number ** Number -> Exponentiation
+        console.log( 2 ** 3 ); // 8
+        
+        // Number + Boolean -> Exponentiation
+        // true = 1, false = 0
+        console.log( 2 ** true );  // 2
+        console.log( 2 ** false ); // 1
+        
+        // Number + String -> NaN
+        // String + String -> NaN
+        
+        // String + Boolean -> Exponentiation
+        console.log( "foo" ** true ); // NaN
+        console.log( "foo" ** false ); // 1
+        
+        // Boolean + Boolean -> Exponentiation
+        // true = 1, false = 0
+        console.log( true ** true );   // 1
+        console.log( false ** false ); // 1
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js_08_InequalityOperators</title>
+</head>
+<body>
+    <script type="text/javascript">
+    /*
+        Inequality Operators
+        
+        !=  not of the smae contents
+        !== Strict inequality. check -> type, contents
+    */
+        
+        console.log("Inequality Operators");
+        console.log(true != false); //true
+        console.log(true != true);  //false
+        console.log(1 != "1");      //false
+        console.log(1 !== "1");     //true
+        console.log(0 != null);     //true
+        console.log(0 != NaN);      //true
+        console.log(0 != undefined);//true
+        console.log(null != null);      //false
+        console.log(null != NaN);       //true
+        console.log(undefined != NaN);  //true
+        console.log(undefined !=  null);//false
+        console.log(undefined !== null);//true
+        console.log(NaN != NaN);        //true
+        
+    </script>
+</body>
+</html>

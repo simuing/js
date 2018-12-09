@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js_03_ArithmeticOperators</title>
+</head>
+<body>
+    <script type="text/javascript">
+    /*
+        Arithmetic Operator
+        
+        Addition (+)
+        Subtraction (-)
+        Division (/)
+        Multiplication (*)
+        Remainder (%)
+    */
+        
+        // Addition (+)
+        // Number + Number -> addition
+        console.log("Addition (+)");
+        console.log( 1 + 2 ); // 3
+        // Number + Boolean -> addition
+        // true -> 1, false -> 0
+        console.log( 1 + true );  // 2
+        console.log( 1 + false ); // 1
+        // Number + String -> concatenation
+        console.log( 1 + "foo" ); // 1foo
+        // String + String -> concatenation
+        console.log( "foo" + "foo" ); // foofoo
+        // String + Boolean -> concatenation
+        // true -> "true", false -> "false"
+        console.log( "foo" + true ); // footrue
+        console.log( "foo" + false ); // foofalse
+        // Boolean + Boolean -> addition
+        // true = 1, false = 0
+        console.log( true + true );   // 2
+        console.log( false + false ); // 0
+        
+        // Subtraction (-)
+        // Number - Number -> Subtraction
+        console.log("Subtraction (-)");
+        console.log( 1 - 2 );   // -1
+        // Number - Boolean -> Subtraction
+        // true = 1, false = 0
+        console.log( 1 - true );  // 0
+        console.log( 1 - false ); // 1
+        // Boolean - Boolean -> Subtraction
+        // true = 1, false = 0
+        console.log( true - true );   // 0
+        console.log( false - false ); // 0
+        // Number - String  -> NaN
+        // String - String  -> NaN
+        // String - Boolean -> NaN
+        
+        // Division (/)
+        // Number / Number -> division
+        console.log("Division (/)");
+        console.log( 1 / 2 );   // -1
+        // Number / Boolean -> division
+        // true = 1, false = 0
+        console.log( 1 / true );  // 1
+        console.log( 1 / false ); // infinity
+        // Boolean / Boolean -> division
+        // true = 1, false = 0
+        console.log( true / true );   // 1
+        console.log( false / false ); // NaN
+        // Number / String  -> NaN
+        // String / String  -> NaN
+        // String / Boolean -> NaN
+        
+        // Multiplication (*)
+        // Number * Number -> multiplication
+        console.log("Multiplication (*)");
+        console.log( 1 * 2 );   // 2
+        // Number * Boolean -> multiplication
+        // true = 1, false = 0
+        console.log( 1 * true );  // 1
+        console.log( 1 * false ); // 0
+        // Boolean * Boolean -> multiplication
+        // true = 1, false = 0
+        console.log( true * true );   // 1
+        console.log( false * false ); // 0
+        // Number * String  -> NaN
+        // String * String  -> NaN
+        // String * Boolean -> NaN
+        
+        // Remainder (%)
+        // Number % Number -> addition
+        console.log("Remainder (%)");
+        console.log( 1 % 2 ); // 3
+        // Number % Boolean -> addition
+        // true = 1, false = 0
+        console.log( 1 % true );  // 0
+        console.log( 1 % false ); // NaN
+        // Boolean % Boolean -> addition
+        // true = 1, false = 0
+        console.log( true % true );   // 0
+        console.log( false % false ); // NaN
+        // Number * String -> NaN
+        // String * String -> NaN
+        // String * Boolean -> NaN
+        
+    </script>
+</body>
+</html>

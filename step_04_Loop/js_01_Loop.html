@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js_01_Loop</title>
+</head>
+<body>
+    <script type="text/javascript">
+    /*
+        Loop
+        
+        
+        for
+        forEach
+        each
+        while
+    */
+        
+        // for(){}
+        // min/max number in an array
+        // loop based algorithm
+        var numbers = [5, 6, 2, 3, 7];
+        max = -Infinity, min = +Infinity;
+
+        for (var i = 0; i < numbers.length; i++) {
+          if (numbers[i] > max) {
+            max = numbers[i];
+          }
+          if (numbers[i] < min) {
+            min = numbers[i];
+          }
+        }
+        console.log(max); //7
+        console.log(min); //2
+        
+        // forEach
+        // each
+        // while
+        
+    </script>
+</body>
+</html>

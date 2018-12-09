@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js_07_ComparisonOperators</title>
+</head>
+<body>
+    <script type="text/javascript">
+    /*
+        Comparison Operators
+        
+        ==  Comparison. check -> contents
+        === Strict Comparison. check -> type, contents
+    */
+        
+        console.log(true == false); //false
+        console.log(true == true);  //true
+        console.log(1 == "1");      //true
+        console.log(1 === "1");     //false
+        console.log(0 == null);     //false
+        console.log(0 == NaN);      //false
+        console.log(0 == undefined);//false
+        console.log(null == null);       //true
+        console.log(null == NaN);        //false
+        console.log(undefined == NaN);   //false
+        console.log(undefined ==  null); //true
+        console.log(undefined === null); //false
+        console.log(NaN == NaN);         //false
+        
+    </script>
+</body>
+</html>

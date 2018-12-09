@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js_02_type</title>
+</head>
+<body>
+    <script type="text/javascript">
+    /*
+        Primitive Type
+        String, Number, Boolean, undefined, Null
+    */
+        // String 
+        var str1 = "string";
+        var str2 = 'string';
+        var str3 = "'string'";
+        var str4 = '"string"';
+        console.log("String");
+        console.log(str1); //string
+        console.log(str2); //string
+        console.log(str3); //'string'
+        console.log(str4); //"string"
+        
+        // Number
+        var num1 = 1;
+        var num2 = 1.0;
+        var num3 = 1.1;
+        console.log("Number");
+        console.log(num1); //1
+        console.log(num2); //1
+        console.log(num3); //1.1
+        
+        // Boolean
+        var bool1 = true;
+        var bool2 = false;
+        console.log("Boolean");
+        console.log(bool1); //true
+        console.log(bool2); //false
+
+        // undefined
+        var undef;
+        console.log("undefined");
+        console.log(undef); //undefined
+        
+        // Null
+        var nul = null;
+        console.log("Null");
+        console.log(nul); //null
+        
+    /*
+        Object Type
+        Array, Object, function
+    */
+        // Array
+        var array = new Array();
+        array.push("one");
+        array.push("two");
+        array.push("Three");
+        console.log("Array");
+        console.log(array);    //["one", "two", "Three"]
+        console.log(array[0]); //one
+        console.log(array[1]); //two
+        console.log(array[2]); //Three
+        
+        // Object
+        var obj = new Object();
+        obj.name = "jin";
+        obj.age = 15;
+        console.log("Object");
+        console.log(obj);      //{name: "jin", age: 15}
+        console.log(obj.name); //jin
+        console.log(obj.age);  //15
+        
+        // Object Array
+        var array = new Array();
+        var obj1 = new Object();
+        var obj2 = new Object();
+        obj1.name = "jin";
+        obj1.age = 15;
+        obj2.name = "song";
+        obj2.age = 23;
+        array.push(obj1);
+        array.push(obj2);
+        console.log("Object Array");
+        console.log(array);         //(2) [{…}, {…}]
+        console.log(array[0]);      //{name: "jin", age: 15}
+        console.log(array[0].name); //jin
+        console.log(array[0].age);  //15
+        console.log(array[1]);      //{name: "song", age: 23}
+        console.log(array[1].name); //song
+        console.log(array[1].age);  //23
+        
+        // function
+        var func1 = function(e) { console.log(e); };
+        function func2(e) { console.log(e); }
+        console.log("function");
+        func1("hi");  //hi
+        func2("bye"); //bye
+        
+    </script>
+</body>
+</html>
