@@ -11,12 +11,20 @@
         Object.apply(thisArg, [argsArray])
     */
 
+        // Using apply to append an array to another
+        var arr = ['a', 'b'];
+        var elements = [0, 1, 2];
+        arr.push.apply(arr, elements);
+        console.log(arr); //(5) ["a", "b", 0, 1, 2]
+        
         // min/max number in an array
         var num = [4, 2, 10, 6];
         var max = Math.max.apply(null, num);
         var min = Math.min.apply(null, num);
         console.log(max); //10 
         console.log(min); //2
+        
+        //
             
     </script>
 </body>

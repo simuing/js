@@ -10,10 +10,7 @@
         
         Object = {key1:value, key2:value, ...}
         Object.lengt = 1
-        
-        var obj = new Object();
-        Object.keys(obj) = {key1, key2, ...}
-        obj.key = value
+        Object.key = value
     */
         var cat = {
             name : "star",
@@ -21,18 +18,13 @@
             color : "white"
         }
         // Object
-        console.log(cat);      //{name: "star", age: 5, color: "white"}
+        console.log(cat); //{name: "star", age: 5, color: "white"}
         
         // Object.key
         console.log(cat.name); //star
         console.log(cat.age);  //5
         console.log(cat.color);//white
         
-        // Object.keys(obj)
-        // Object.values(obj)
-        console.log(Object.keys(cat));   //(3) ["name", "age", "color"]
-        console.log(Object.values(cat)); //(3) ["star", 5, "white"]
-    
     </script>
 </body>
 </html>

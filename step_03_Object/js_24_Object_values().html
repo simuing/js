@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>js_01_ObjectFunction</title>
+    <title>js_01_Object</title>
 </head>
 <body>
     <script type="text/javascript">
     /*
         Object Function
         
-        Object.apply()
-        Object.assign()
-        Object.call()
-        Object.bind()
-        Object.create()
-        Object.defineProperties()
-        Object.defineProperty()
-        Object.freeze()
-        Object.getOwnPropertyDescriptor()
-        Object.getOwnPropertyNames()
-        Object.getOwnPropertySymbols()
-        Object.getPrototypeOf()
-        Object.is()
-        Object.isExtensible()
-        Object.isFrozen()
-        Object.isSealed()
-        Object.keys()
-        Object.preventExtensions()
-        Object.prototype()
-        Object.seal()
-        Object.setPrototypeOf()
-        Object.values()
+        Object.values(obj) = {key1, key2, ...}
     */
+        
+        // Object.values(obj)
+        var cat = {
+            name : "star",
+            age : 5,
+            color : "white"
+        }
+        console.log(Object.values(cat)); //(3) ["star", 5, "white"]
+    
     </script>
 </body>
 </html>
