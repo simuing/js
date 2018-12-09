@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>inNumber.html</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+   <div>
+       <input type="text" id="onlyNum" value=""/>
+   </div>
+    <script type="text/javascript">
+        
+        $("#onlyNum").keyup(function(event){
+
+            // 입력값이 한 글자 이상일 경우 (복사 붙여넣기 방지)
+            if(event.originalEvent.key.length == 1){
+
+                // 첫번째 문자열이 음수기호일 경우 true
+                if(this.value.length == 1 && event.originalEvent.key == '-'){
+                    return true;
+                }
+                // 숫자일 경우 true
+                if ($.isNumeric(event.originalEvent.key)){
+                    return true;
+                }
+                
+            }else{
+                this.value = ''; //예외(부정)행위로 간주하여 값 reset
+            }
+            
+            // 그 외 입력시 입력한 값만 remove
+            this.value = (this.value).replace(event.originalEvent.key, '');
+            return false;
+        })
+    </script>
+</body>
+</html>

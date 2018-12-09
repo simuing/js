@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Set Comma Test Suite</title>
+    <meta charset="utf-8">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.8.0.css">
+    <script src="https://code.jquery.com/qunit/qunit-2.8.0.js"></script>
+</head>
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture">test markup</div>
+    <script type="text/javascript">
+        <!-- code -->
+        function setComma(){
+            
+        }
+    </script>
+    <script type="text/javascript">
+        <!-- test code -->
+        QUnit.test("세 자리 이하인 경우는 매개변수를 바로 반환한다.", function (assert){
+           assert.equal(setComma(1), 1, "한 자리는 그냥 반환된다."); 
+        });
+    </script>
+</body>
+</html>
